@@ -1,0 +1,5 @@
+services:
+  - type: static
+    name: healthians-lab
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
