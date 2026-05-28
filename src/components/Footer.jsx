@@ -22,11 +22,11 @@ export default function Footer() {
       {/* Top accent */}
       <div className="h-px bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0" />
 
-      <div className="container py-16 lg:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-10">
+      <div className="container py-16 lg:py-20 pb-24 md:pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12">
 
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="sm:col-span-2 md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center"
                 style={{ background: 'linear-gradient(135deg, #00B7B2, #00D4AA)' }}>
@@ -37,14 +37,14 @@ export default function Footer() {
                 <div className="text-white/30 text-[8px] tracking-wider uppercase">Authorised Partner</div>
               </div>
             </div>
-            <p className="text-white/30 text-[13px] leading-relaxed mb-5">
+            <p className="text-white/40 text-[13px] leading-relaxed mb-5">
               India's Leading Diagnostics Service Provider with free home sample collection.
             </p>
             {/* Social */}
             <div className="flex gap-2">
               {['facebook', 'twitter', 'instagram', 'linkedin'].map((s) => (
                 <a key={s} href="#"
-                  className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-white/30 hover:text-white hover:bg-white/[0.08] transition-all text-xs">
+                  className="w-8 h-8 rounded-lg bg-white/[0.06] border border-white/[0.08] flex items-center justify-center text-white/40 hover:text-white hover:bg-white/[0.12] transition-all text-xs">
                   {s[0].toUpperCase()}
                 </a>
               ))}
@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {quickLinks.map((l) => (
                 <li key={l.name}>
-                  <a href={l.href} className="text-white/30 text-[13px] hover:text-primary transition-colors">{l.name}</a>
+                  <a href={l.href} className="text-white/40 text-[13px] hover:text-primary transition-colors">{l.name}</a>
                 </li>
               ))}
             </ul>
@@ -69,14 +69,14 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {pkgLinks.map((p) => (
                 <li key={p}>
-                  <a href="#packages" className="text-white/30 text-[13px] hover:text-primary transition-colors">{p}</a>
+                  <a href="#packages" className="text-white/40 text-[13px] hover:text-primary transition-colors">{p}</a>
                 </li>
               ))}
             </ul>
             <h4 className="text-white text-[13px] font-semibold mt-6 mb-3">Legal</h4>
             <ul className="space-y-2">
               {['Privacy Policy', 'Terms & Conditions'].map((l) => (
-                <li key={l}><a href="#" className="text-white/30 text-[13px] hover:text-primary transition-colors">{l}</a></li>
+                <li key={l}><a href="#" className="text-white/40 text-[13px] hover:text-primary transition-colors">{l}</a></li>
               ))}
             </ul>
           </div>
@@ -85,13 +85,13 @@ export default function Footer() {
           <div>
             <h4 className="text-white text-[13px] font-semibold mb-4">Contact</h4>
             <div className="space-y-3">
-              <a href="tel:+919324219275" className="flex items-center gap-2 text-white/30 text-[13px] hover:text-primary transition-colors">
+              <a href="tel:+919324219275" className="flex items-center gap-2 text-white/40 text-[13px] hover:text-primary transition-colors">
                 <Phone size={13} className="text-primary shrink-0" /> +91 93242 19275
               </a>
-              <a href="mailto:info@healthianslabs.com" className="flex items-center gap-2 text-white/30 text-[13px] hover:text-primary transition-colors">
+              <a href="mailto:info@healthianslabs.com" className="flex items-center gap-2 text-white/40 text-[13px] hover:text-primary transition-colors">
                 <Mail size={13} className="text-primary shrink-0" /> info@healthianslabs.com
               </a>
-              <div className="flex items-start gap-2 text-white/30 text-[13px]">
+              <div className="flex items-start gap-2 text-white/40 text-[13px]">
                 <MapPin size={13} className="text-primary shrink-0 mt-0.5" /> PAN India – 250+ Cities
               </div>
             </div>
@@ -105,10 +105,10 @@ export default function Footer() {
       {/* Bottom */}
       <div className="border-t border-white/[0.04]">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/20 text-[12px]">
+          <p className="text-white/30 text-[12px]">
             © {new Date().getFullYear()} Healthians Labs – Authorised Partner
           </p>
-          <div className="flex items-center gap-1.5 text-white/20 text-[12px]">
+          <div className="flex items-center gap-1.5 text-white/30 text-[12px]">
             Made with <Heart size={11} className="text-red-400" fill="currentColor" /> for your health
           </div>
         </div>

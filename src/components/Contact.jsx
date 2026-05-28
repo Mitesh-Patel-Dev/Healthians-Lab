@@ -24,10 +24,11 @@ export default function Contact() {
           desc="Fill the form or reach out directly. We respond within 30 minutes."
         />
 
-        <div className="grid lg:grid-cols-5 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-white shadow-lg overflow-hidden">
+         <div className="grid lg:grid-cols-5 gap-0">
           {/* Info card */}
           <FadeIn direction="left" className="lg:col-span-2">
-            <div className="rounded-2xl p-6 lg:p-8 h-full"
+            <div className="rounded-none lg:rounded-l-2xl p-6 lg:p-8 h-full"
               style={{ background: 'linear-gradient(160deg, #0B1120, #15203A)' }}>
               <h3 className="text-lg font-semibold text-white mb-1" style={{ fontFamily: 'Poppins' }}>
                 Contact Information
@@ -81,7 +82,7 @@ export default function Contact() {
 
           {/* Form */}
           <FadeIn direction="right" className="lg:col-span-3">
-            <div className="card">
+            <div className="p-6 lg:p-8 bg-white">
               <h3 className="text-base font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Poppins' }}>
                 Book an Appointment
               </h3>
@@ -154,6 +155,7 @@ export default function Contact() {
               )}
             </div>
           </FadeIn>
+         </div>
         </div>
       </div>
     </section>
